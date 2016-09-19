@@ -12,7 +12,6 @@ serviceCalculator = function(datestr){
 
   var service = Math.round((nowstr - newdatestr)*100)/100;
   return service;
-
 }
 
 employeeList = [
@@ -71,7 +70,7 @@ employeeList = [
     imgurl: "http://1.media.collegehumor.cvcdn.com/57/18/0fae99c48dd98c48f6c195d95ba5f13a.jpg",
     DOB: "03/25/1966"
   }
-]
+];
 
 for (var i = 0; i < employeeList.length; i++) {
   employeeList[i].yearsOfService = serviceCalculator(employeeList[i].hireDate);
